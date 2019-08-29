@@ -1,0 +1,17 @@
+[
+{"name": "Input and Output", 
+  "parameters": ["data.file", "output.filename" ]},
+
+{"name": "Elastic Principal Graph - all",
+  "parameters": ["epg_trimmingradius","epg_alpha","epg_lambda", "epg_mu"] },
+
+{"name":"Optimize Structure", "parameters":["epg_max_steps","incr_n_nodes"]},
+{"name":"Prune Graph", "parameters":["epg_collapse_mode","epg_collapse_par"]},
+{"name":"Extend Leaf Nodes", "parameters":["epg_ext_mode","epg_ext_par"]},
+
+{"name": "Plotting", "hidden": false,
+  "parameters": ["figure.name", "n_comp", "comp1", "comp2", "figure.width", "figure.height", "figure.legend.num.columns"]}
+
+]
+
+
