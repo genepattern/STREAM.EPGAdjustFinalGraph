@@ -10,7 +10,7 @@
 {"name":"Extend Leaf Nodes", "parameters":["epg_ext_mode","epg_ext_par"]},
 
 {"name": "Plotting", "hidden": false,
-  "parameters": ["figure.name", "n_comp", "comp1", "comp2", "figure.width", "figure.height", "figure.legend.num.columns"]}
+  "parameters": ["n_comp", "comp1", "comp2", "figure.width", "figure.height", "figure.legend.num.columns"]}
 
 ]
 
