@@ -59,7 +59,7 @@ def main():
     parser.add_argument("-epg_collapse_mode",dest="epg_collapse_mode", default=None, help="")
     parser.add_argument("-epg_collapse_par",dest="epg_collapse_par", type=int, default=5, help="")
 
-    parser.add_argument("-epg_beta",dest="epg_alpha", type=float, default=0.0, help="")
+    parser.add_argument("-epg_beta",dest="epg_beta", type=float, default=0.0, help="")
     parser.add_argument("-epg_finalenergy",dest="epg_finalenergy",  default='Penalized', help="")
 
  
@@ -72,6 +72,8 @@ def main():
 
 
     args = parser.parse_args()
+
+    print(args)
     
     workdir = "./"
 
@@ -79,9 +81,9 @@ def main():
 
     st.optimize_branching(adata,incr_n_nodes=args.incr_n_nodes,epg_maxsteps=args.epg_max_steps, epg_trimmingradius=args.epg_trimmingradius,epg_alpha=args.epg_alpha,epg_n_processes=args.epg_n_processes,reset=False)
 
-    if (args.epg_collapse_mode != 'None'):
+    if (args.epg_collapse_mode != 'None') and (args.epg_collapse_mode is not None):
         st.prune_elastic_principal_graph(adata, epg_collapse_mode=args.epg_collapse_mode,epg_collapse_par=args.epg_collapse_par,epg_trimmingradius=args.epg_trimmingradius,epg_alpha=args.epg_alpha, epg_n_processes=args.epg_n_processes, reset=False, epg_beta=args.epg_beta, epg_finalenergy=args.epg_finalenergy)
-    if (args.epg_ext_mode != 'None'):
+    if (args.epg_ext_mode != 'None') and (args.epg_ext_mode is not None):
         st.extend_elastic_principal_graph(adata,epg_ext_mode=args.epg_ext_mode,epg_ext_par=args.epg_ext_par,epg_trimmingradius=args.epg_trimmingradius,reset=False)
 
 

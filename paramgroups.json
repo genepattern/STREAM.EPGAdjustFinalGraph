@@ -3,14 +3,15 @@
   "parameters": ["data.file", "output.filename" ]},
 
 {"name": "Elastic Principal Graph - all",
-  "parameters": ["epg_trimmingradius","epg_alpha","epg_lambda", "epg_mu"] },
+  "parameters": ["epg.trimming.radius","epg.alpha","epg.lambda", "epg.mu"] },
 
-{"name":"Optimize Structure", "parameters":["epg_max_steps","incr_n_nodes"]},
-{"name":"Prune Graph", "parameters":["epg_collapse_mode","epg_collapse_par"]},
-{"name":"Extend Leaf Nodes", "parameters":["epg_ext_mode","epg_ext_par"]},
+
+{"name":"Optimize Structure", "parameters":["epg.max.steps","incremental.number.of.nodes"]},
+{"name":"Prune Graph", "parameters":["epg.collapse.mode","epg.collapse.parameter"]},
+{"name":"Extend Leaf Nodes", "parameters":["epg.extension.mode","epg.extension.parameter"]},
 
 {"name": "Plotting", "hidden": false,
-  "parameters": ["n_comp", "comp1", "comp2", "figure.width", "figure.height", "figure.legend.num.columns"]}
+  "parameters": ["num.components", "component.1", "component.2", "figure.width", "figure.height", "figure.legend.num.columns"]}
 
 ]
 
