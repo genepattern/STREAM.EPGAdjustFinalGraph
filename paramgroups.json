@@ -3,7 +3,7 @@
   "parameters": ["data.file", "output.filename" ]},
 
 {"name": "Elastic Principal Graph - all",
-  "parameters": ["epg.trimming.radius","epg.alpha","epg.lambda", "epg.mu"] },
+  "parameters": ["epg.trimming.radius","epg.alpha","epg.beta", "epg.lambda", "epg.mu", "epg.final.energy"] },
 
 
 {"name":"Optimize Structure", "parameters":["epg.max.steps","incremental.number.of.nodes"]},
@@ -11,7 +11,7 @@
 {"name":"Extend Leaf Nodes", "parameters":["epg.extension.mode","epg.extension.parameter"]},
 
 {"name": "Plotting", "hidden": false,
-  "parameters": ["num.components", "component.1", "component.2", "figure.width", "figure.height", "figure.legend.num.columns"]}
+  "parameters": ["num.components", "component.x", "component.y", "figure.width", "figure.height", "figure.legend.num.columns"]}
 
 ]
 
