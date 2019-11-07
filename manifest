@@ -9,7 +9,7 @@ categories=SingleCell
 commandLine=python /stream/epg_adjustfinal_command_line.py -m <data.file> -of <output.filename> <figure.width> <figure.height> <figure.legend.num.columns> <component.x> <component.y> <num.components> <epg.max.steps>  <incremental.number.of.nodes> <epg.trimming.radius> <epg.alpha> -epg_n_processes <job.cpuCount>  <epg.lambda> <epg.mu> <epg.collapse.mode> <epg.collapse.parameter> <epg.extension.mode> <epg.extension.parameter> <epg.final.energy> <epg.beta>
 
 cpuType=any
-description=
+description=Adjust the final EPG trajectory structure by pruning, extending and otherwise modifying the branches to optimize for single-cell data
 fileFormat=pkl
 language=any
 minGenePatternVersion=3.9.13
