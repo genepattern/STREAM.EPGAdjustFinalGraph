@@ -235,7 +235,7 @@ p15_value=
 
 p16_MODE=
 p16_TYPE=TEXT
-p16_default_value=
+p16_default_value=None
 p16_description=The mode used to prune the graph.Choose from {{'PointNumber','PointNumber_Extrema','PointNumber_Leaves','EdgesNumber','EdgesLength'}}. 'PointNumber': branches with less than epg_collapse_par points (points projected on the extreme points are not considered) are removed; 'PointNumber_Extrema', branches with less than epg_collapse_par (points projected on the extreme points are not considered) are removed;  'PointNumber_Leaves', branches with less than epg_collapse_par points (points projected on non-leaf extreme points are not considered) are removed.
 p16_fileFormat=
 p16_flag=
@@ -245,7 +245,7 @@ p16_optional=
 p16_prefix=
 p16_prefix_when_specified=-epg_collapse_mode       
 p16_type=java.lang.String
-p16_value=None\=None;PointNumber\=PointNumber
+p16_value=None\=None;PointNumber\=PointNumber;PointNumber_Extrema\=PointNumber_Extrema;PointNumber_Leaves\=PointNumber_Leaves;EdgesNumber\=EdgesNumber;EdgesLength\=EdgesLength
 
 p17_MODE=
 p17_TYPE=TEXT
