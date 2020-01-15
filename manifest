@@ -263,7 +263,7 @@ p17_value=
 
 p18_MODE=
 p18_TYPE=TEXT
-p18_default_value=
+p18_default_value=QuantDists
 p18_description= The mode used to extend the leaves.  Choose from {{'QuantDists','QuantCentroid','WeigthedCentroid'}}; 'QuantCentroid':for each leaf node, the extreme points are ordered by their distance from the node and the centroid of the points further than epg_ext_par is returned; 'WeigthedCentroid':for each leaf node, a weight is computed for each points by raising the distance to the epg_ext_par power. Larger epg_ext_par results in a bigger influence of points further than the node; 'QuantDists':for each leaf node, the extreme points are ordered by their distance from the node and the 100*epg_ext_par th percentile of the points farther than epg_ext_par is returned.
 p18_fileFormat=
 p18_flag=
